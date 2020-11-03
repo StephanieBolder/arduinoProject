@@ -23,7 +23,7 @@ Je kunt eventueel nog `npm run setup` gebruiken om eventuele extra opties toe te
 - [Static Site Boilerplate](https://github.com/aadvdh/static-site-boilerplate-tailwindcss)
 
 ## Clone deze repository door gebruik te maken van:
-https://github.com/StephanieBolder/stephaniebolder-portfolio
+https://github.com/StephanieBolder/arduinoProject/tree/kleuren
 
 ## Programma's gebruikt:
 - Visual Studio Code
