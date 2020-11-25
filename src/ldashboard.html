@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<title>Large dashboard</title>
+<link
+  href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css"
+  rel="stylesheet"
+/>
+<link
+  href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
+  rel="stylesheet"
+/>
+<link rel="stylesheet" href="https://use.typekit.net/tds4tgw.css" />
+<style>
+  .achtergrond-volledig {
+    background: rgba(255, 255, 255, 0.6);
+  }
+
+  .achtergrond-navbar {
+    background: rgba(255, 255, 255, 0.6);
+  }
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+  background-color: #fefefe;
+  border-radius: 0.5rem;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+/* The Close Button */
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+</style>
+
+<html>
+  <body>
+    <div
+      class="flex justify-center h-screen bg-gradient-to-r from-purple-300 to-red-300"
+    >
+      <div class="my-16 w-10/12 rounded-lg shadow-lg achtergrond-volledig">
+        <div class="flex flex-row">
+
+          <!-- navbar -->
+          <div
+            class="rounded-lg inset-y-0 left-0 achtergrond-navbar shadow-lg flex flex-col max-h-screen rounded-r-none"
+          >
+            <div class="flex flex-row items-center mt-24 ml-8">
+              <img class="w-4 h-4" src="images/Home.png" />
+              <a class="font-display text-navbartekst ml-8 mr-8" href="#"
+                >Dashboard</a
+              >
+            </div>
+            <div class="flex flex-row items-center mt-8 ml-8">
+              <img class="w-4 h-4" src="images/Category.png" />
+              <a class="font-display text-navbartekst ml-8" href="#">Stoffen</a>
+            </div>
+            <div class="flex flex-row items-center mt-8 ml-8">
+              <img class="w-4 h-4" src="images/3 User.png" />
+              <a class="font-display text-navbartekst ml-8" href="#"
+                >Partners</a
+              >
+            </div>
+            <div class="flex flex-row items-center mt-8 ml-8">
+              <img class="w-4 h-4" src="images/Message.png" />
+              <a class="font-display text-navbartekst ml-8" href="#"
+                >Bestellingen</a
+              >
+            </div>
+            <div class="flex flex-row items-center mt-24 ml-8 mb-48">
+              <img class="w-4 h-4" src="images/Setting.png" />
+              <a class="font-display text-navbartekst ml-8" href="#"
+                >Instellingen</a
+              >
+            </div>
+          </div> 
+        <div class="flex flex-row mt-4 top-0 right-0 fixed">
+          <a href="#" class="mr-4 w-5 h-5 opacity-75 "><img src="images/Danger.png" /></a>
+          <a href="#" class="mr-4 w-5 h-5 opacity-75"><img src="images/Calendar.png" /></a>
+          <a href="#" class="w-5 h-5 opacity-75"><img src="images/Notification.png" /></a>
+        </div>
+        <div class="flex justify-center">
+          <div class="mt-8 bg-white rounded-lg shadow-lg w-48 h-48  flex flex-col text-center">
+            <img class="rounded-md -mt-4 ml-12 w-12 h-12" src="images/nr00-zwart (2).jpg">
+            <div class="font-display font-bold">Zwart</div>
+            <div class="font-display text-xs font-semibold">Nr. 01</div>
+            <div class="font-display text-xs font-light">Effen - Katoen</div>
+            <div class="flex flex-row justify-around mt-4 ">
+              <div class="font-display text-white rounded-lg shadow-lg px-4 py-1 font-semibold bg-lightgrayishmagenda">wegen</div>
+              <div class="font-display text-graytext rounded-lg shadow-lg px-4 py-1 font-semibold bg-editbutton">edit</div>
+            </div>
+            </div>
+            
+          </div>
+        </div>
+      </div>
+      </div>
+    
+
+
+
+
+<!-- <div class="m-auto flex justify-center bg-white rounded-lg shadow-lg w-4/12">
+  <div class="flex flex-col items-center">
+  <img class="w-24 rounded-lg -mt-8 shadow-lg" src="images/nr00-zwart (2).jpg">
+  <div class="mt-8 font-display font-bold text-2xl">Zwart</div>
+  <div class="font-display text-gray-600 text-lg">Nr. 01</div>
+  <div class="font-display text-gray-600 font-light text-lg">Katoen - Effen</div>
+  <div class="mt-8 font-display font-light text-gray-500 text-lg">Leg de stof op de weegschaal en klik op de knop</div>
+  <button class="mt-6 py-2 px-8 rounded-lg shadow-lg font-semibold font-display text-white bg-button">Wegen</button>
+  <input
+  class="shadow-sm mt-4 mb-12 text-center font-display  py-2 bg-lightgrayishmagenda rounded-sm placeholder-white px-16 "
+  placeholder="..."
+/>
+  </div>
+</div> -->
+
+<div class="flex justify-around">
+  <div class="mt-8 bg-white rounded-lg shadow-lg w-2/12 flex flex-col text-center">
+    <img class="rounded-md -mt-4 ml-12 w-12 h-12" src="images/nr00-zwart (2).jpg">
+    <div class="font-display font-bold">Zwart</div>
+    <div class="font-display text-xs font-semibold">Nr. 01</div>
+    <div class="font-display text-xs font-light">Effen - Katoen</div>
+    <div class="flex flex-row justify-around mt-4 ">
+      <button id="myBtn" class="font-display text-white rounded-lg shadow-lg px-4 py-1 font-semibold bg-lightgrayishmagenda">wegen</button>
+
+<div id="myModal" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <span class="float-right close">&times;</span>
+    <img class="w-12 h-12 -mt-4" src="images/nr00-zwart (2).jpg">
+    <div class="font-display font-bold ">Zwart</div>
+    <div class="font-display font-light text-sm">Nr. 01</div>
+    <div class="font-display font-light text-sm">Effen - Katoen</div>
+    <div class="mt-8 font-display font-regular text-md">Leg de stof op de weegschaal en klik op de knop</div>
+    <button class="bg-lightgrayishmagenda py-2 w-2/12 ">Wegen</button>
+  </div>
+
+</div>
+
+      <div class="font-display text-graytext rounded-lg shadow-lg px-4 py-1 font-semibold bg-editbutton">edit</div>
+    </div>
+    </div>
+    <div class="mt-8 bg-white rounded-lg shadow-lg w-2/12 flex flex-col text-center">
+      <img class="rounded-md -mt-4 ml-12 w-12 h-12" src="images/nr00-zwart (2).jpg">
+      <div class="font-display font-bold">Zwart</div>
+      <div class="font-display text-xs font-semibold">Nr. 01</div>
+      <div class="font-display text-xs font-light">Effen - Katoen</div>
+      <div class="flex flex-row justify-around mt-4 ">
+        <div class="font-display text-white rounded-lg shadow-lg px-4 py-1 font-semibold bg-lightgrayishmagenda">wegen</div>
+        <div class="font-display text-graytext rounded-lg shadow-lg px-4 py-1 font-semibold bg-editbutton">edit</div>
+      </div>
+      </div>
+      <div class="mt-8 bg-white rounded-lg shadow-lg w-2/12 flex flex-col text-center">
+        <img class="rounded-md -mt-4 ml-12 w-12 h-12" src="images/nr00-zwart (2).jpg">
+        <div class="font-display font-bold">Zwart</div>
+        <div class="font-display text-xs font-semibold">Nr. 01</div>
+        <div class="font-display text-xs font-light">Effen - Katoen</div>
+        <div class="flex flex-row justify-around mt-4 ">
+          <div class="font-display text-white rounded-lg shadow-lg px-4 py-1 font-semibold bg-lightgrayishmagenda">wegen</div>
+          <div class="font-display text-graytext rounded-lg shadow-lg px-4 py-1 font-semibold bg-editbutton">edit</div>
+        </div>
+        </div>
+
+
+    </div>
+
+
+    <script>
+      // Get the modal
+      var modal = document.getElementById("myModal");
+      
+      // Get the button that opens the modal
+      var btn = document.getElementById("myBtn");
+      
+      // Get the <span> element that closes the modal
+      var span = document.getElementsByClassName("close")[0];
+      
+      // When the user clicks the button, open the modal 
+      btn.onclick = function() {
+        modal.style.display = "block";
+      }
+      
+      // When the user clicks on <span> (x), close the modal
+      span.onclick = function() {
+        modal.style.display = "none";
+      }
+      
+      // When the user clicks anywhere outside of the modal, close it
+      window.onclick = function(event) {
+        if (event.target == modal) {
+          modal.style.display = "none";
+        }
+      }
+      </script>
+  </body>
+</html>
