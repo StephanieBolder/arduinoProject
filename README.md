@@ -1,8 +1,32 @@
-## Installation
+# Weegschaal project
+Dit project is gemaakt voor twee verschillende stakeholders, die beide tegen hetzelfde probleem aanlopen. Ik heb hierbij een oplossing bedacht, namelijk een weegschaal te maken. Eén onderdeel wat hierbij komt kijken, is een dashboard design uitgewerkt in code. Deze code is onder deze branch te zien. 
 
-Create a repository from the template. Clone your own repository. 
-run `npm install` and then `npm start` for your dev server. 
-You can run `npm run setup` for some additional options and name of your website.
+## Status
+Afgerond
 
-# Weegschaal - Arduino
-Dit project is gemaakt om de inventarisatie van een bedrijf bij te houden. Hierbij is gebruik gemaakt van de Arduino UNO, en de 
+## Installatie
+Creeër een repository vanuit het template dat aangeboden wordt. Clone vervolgens je eigen repository. Gebruik `npm install`, en vervolgens `npm start` voor je eigen development server.
+Je kunt eventueel nog `npm run setup` gebruiken om eventuele extra opties toe te voegen, en voor de naam van je website te registreren. 
+
+## Auteurs
+- Stephanie Bolder, Fontys FHICT student
+
+## Gebouwd met:
+- HTML
+- CSS
+- Javascript
+- Tailwind CSS
+- Arduino IDE
+- Johnny Five & Socket.io
+
+## Template gebruikt:
+- [Static Site Boilerplate](https://github.com/aadvdh/static-site-boilerplate-tailwindcss)
+
+## Clone deze repository door gebruik te maken van:
+https://github.com/StephanieBolder/arduinoProject/tree/weegschaal
+
+## Programma's gebruikt:
+- Visual Studio Code
+- Git CMD
+- Node.JS Command Prompt
+- Google Chrome
