@@ -1,11 +1,15 @@
 <!DOCTYPE html>
-<link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
-<html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Arduino - Kleuren</title>
+    <meta name="description" content="" />
+</head>
 <body>
 
   <div class="flex justify-between">
 
-    <!-- Alle kleuren -->
+    <!-- Alle kleuren voor browser -->
     <div id="1">
       <div class="h-screen w-6 hidden bg-red-900"> </div>
     </div>
@@ -728,20 +732,30 @@
     </div>
 
     
+</body>
+</html>
   
     <!-- Link naar socket.io voor communicatie met arduino -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.3.0/socket.io.js"></script>
 <script>
+
   let ele = null;
   const socket = io.connect('http://localhost:8000');
+
+  // connectie in console.log laten zien
   console.log("loading")
   socket.on("connect", function() {
+    
+  // connectie in console.log laten zien
     console.log("Connect");
     socket.on('distance', function (centimeters) {
         let cm = Math.round(centimeters);
+
+        // Arduino meet hoger dan 180 = kleur 180 laten zien
         if(cm > 180) {
           cm = 180;
           
+        // Arduino meet lager dan 1 = kleur 1 laten zien
         } else if (cm < 1) {
           cm = 1;
         }
@@ -751,8 +765,6 @@
         ele = document.querySelector("#" + CSS.escape(cm));
         console.log(ele.childNodes);
         ele.childNodes[1].classList.remove("hidden");
-
-			
     });
   })
   

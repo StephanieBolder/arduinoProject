@@ -30,3 +30,6 @@ https://github.com/StephanieBolder/arduinoProject/tree/kleuren
 - Git CMD
 - Node.JS Command Prompt
 - Google Chrome
+
+## Licentie
+- [MIT](https://choosealicense.com/licenses/mit/)
