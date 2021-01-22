@@ -30,3 +30,6 @@ https://github.com/StephanieBolder/arduinoProject
 - Git CMD
 - Node.JS Command Prompt
 - Google Chrome
+
+## License
+- [MIT](https://choosealicense.com/licenses/mit/)
