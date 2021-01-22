@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<!-- Groot dashboard uitgewerkt -->
 <title>Large dashboard</title>
 <link
   href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css"
@@ -18,7 +19,7 @@
     background: rgba(255, 255, 255, 0.6);
   }
 
-/* The Modal (background) */
+/* Modal achtergrond */
 .modal {
   display: none; /* Hidden by default */
   position: fixed; /* Stay in place */
@@ -33,7 +34,7 @@
   background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
 }
 
-/* Modal Content */
+/* Modal content */
 .modal-content {
   background-color: #fefefe;
   border-radius: 0.5rem;
@@ -46,7 +47,7 @@
   flex-direction: column;
 }
 
-/* The Close Button */
+/* Button om te sluiten */
 .close {
   color: #aaaaaa;
   float: right;
@@ -54,6 +55,7 @@
   font-weight: bold;
 }
 
+/* Hover over button effect */
 .close:hover,
 .close:focus {
   color: #000;
@@ -64,13 +66,15 @@
 
 <html>
   <body>
+    
+      <!-- Achtergrond dashboard-->
     <div
       class="flex justify-center h-screen bg-gradient-to-r from-purple-300 to-red-300"
     >
       <div class="my-16 w-10/12 rounded-lg shadow-lg achtergrond-volledig">
         <div class="flex flex-row">
 
-          <!-- navbar -->
+          <!-- Navigatiebar -->
           <div
             class="rounded-lg inset-y-0 left-0 achtergrond-navbar shadow-lg flex flex-col max-h-screen rounded-r-none"
           >
@@ -103,11 +107,15 @@
               >
             </div>
           </div> 
+
+          <!-- Rechter notificatie onderdelen -->
         <div class="flex flex-row mt-4 top-0 right-0 fixed">
           <a href="#" class="mr-4 w-5 h-5 opacity-75 "><img src="images/Danger.png" /></a>
           <a href="#" class="mr-4 w-5 h-5 opacity-75"><img src="images/Calendar.png" /></a>
           <a href="#" class="w-5 h-5 opacity-75"><img src="images/Notification.png" /></a>
         </div>
+
+        <!-- Eén stof inclusief mogelijkheden -->
         <div class="flex justify-center">
           <div class="mt-8 bg-white rounded-lg shadow-lg w-48 h-48  flex flex-col text-center">
             <img class="rounded-md -mt-4 ml-12 w-12 h-12" src="images/nr00-zwart (2).jpg">
@@ -124,25 +132,7 @@
         </div>
       </div>
       </div>
-    
-
-
-
-
-<!-- <div class="m-auto flex justify-center bg-white rounded-lg shadow-lg w-4/12">
-  <div class="flex flex-col items-center">
-  <img class="w-24 rounded-lg -mt-8 shadow-lg" src="images/nr00-zwart (2).jpg">
-  <div class="mt-8 font-display font-bold text-2xl">Zwart</div>
-  <div class="font-display text-gray-600 text-lg">Nr. 01</div>
-  <div class="font-display text-gray-600 font-light text-lg">Katoen - Effen</div>
-  <div class="mt-8 font-display font-light text-gray-500 text-lg">Leg de stof op de weegschaal en klik op de knop</div>
-  <button class="mt-6 py-2 px-8 rounded-lg shadow-lg font-semibold font-display text-white bg-button">Wegen</button>
-  <input
-  class="shadow-sm mt-4 mb-12 text-center font-display  py-2 bg-lightgrayishmagenda rounded-sm placeholder-white px-16 "
-  placeholder="..."
-/>
-  </div>
-</div> -->
+  
 
 <div class="flex justify-around">
   <div class="mt-8 bg-white rounded-lg shadow-lg w-2/12 flex flex-col text-center">
@@ -197,26 +187,26 @@
 
 
     <script>
-      // Get the modal
+      // Connectie met modal
       var modal = document.getElementById("myModal");
       
-      // Get the button that opens the modal
+      // Button om modal te openen
       var btn = document.getElementById("myBtn");
       
-      // Get the <span> element that closes the modal
+      // <span> element om modal te sluiten
       var span = document.getElementsByClassName("close")[0];
       
-      // When the user clicks the button, open the modal 
+      // Wanneer de knop wordt ingedrukt, open de modal
       btn.onclick = function() {
         modal.style.display = "block";
       }
       
-      // When the user clicks on <span> (x), close the modal
+      // Wanneer de <span> wordt ingedrukt, sluit de modal
       span.onclick = function() {
         modal.style.display = "none";
       }
       
-      // When the user clicks anywhere outside of the modal, close it
+      // Wanneer er buiten de modal wordt geklikt, sluit de modal
       window.onclick = function(event) {
         if (event.target == modal) {
           modal.style.display = "none";

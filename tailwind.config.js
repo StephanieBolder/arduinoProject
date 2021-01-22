@@ -1,3 +1,5 @@
+// Tailwind Configuration
+
 module.exports = {
   theme: {
     extend: {
